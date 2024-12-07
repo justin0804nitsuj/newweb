@@ -1,0 +1,85 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu-container {
+    position: fixed; /* 固定選單位置 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    transition: height 0.3s ease, padding 0.3s ease; /* 過渡動畫 */
+    z-index: 1000;
+    height: 55px; /* 初始高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 增加陰影去除灰色區域 */
+}
+
+.menu-container.scrolled {
+    height: 30px; /* 滾動後的高度 (2/3) */
+    padding: 5px 0;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+main {
+    padding: 120px 20px 20px; /* 確保內容不被固定的選單蓋住 */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
